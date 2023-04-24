@@ -1,4 +1,5 @@
 # ProductsFrontend
+Introductory Angular Project, reading from a NoSQL database, a schema of which can be found on the following web address https://codingfactory.ddns.net/api-docs/ 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
 
