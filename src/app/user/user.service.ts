@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { delay } from 'rxjs';
-import { UserAPIList } from './user.interfaces';
+import { UserAPIList } from 'dist/shared/lib/user.interfaces';
 
 const USER_API = 'https://codingfactory.ddns.net/api/user'
 

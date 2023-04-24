@@ -1,8 +1,8 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { User, UserAPIList } from '../user.interfaces';
+import { User, UserAPIList } from 'dist/shared/lib/user.interfaces';
 import { UserService } from '../user.service';
 
-import { Subscription } from 'rxjs';
+import { from, Subscription } from 'rxjs';
 import {orderBy} from 'lodash-es'
 @Component({
   selector: 'app-users-list',
@@ -12,7 +12,6 @@ import {orderBy} from 'lodash-es'
 export class UsersListComponent implements OnInit, OnDestroy {
   // Inject the service
   constructor(private userService: UserService){}
-
   loading= false;
   userList: User[]=[];
   subscription: Subscription | undefined

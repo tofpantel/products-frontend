@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { usersMenu, productsMenu } from 'dist/shared';
+import { AppService } from './app.service';
 
 @Component({
   selector: 'app-root',
@@ -11,5 +12,5 @@ export class AppComponent {
   usersMenu = usersMenu;
   productsMenu = productsMenu;
 
-
+  constructor(private service: AppService){}
 }
