@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { MenuItem } from './app.interfaces';
+import { usersMenu } from 'shared';
+import { productsMenu } from 'shared';
 
 @Component({
   selector: 'app-root',
@@ -8,17 +9,7 @@ import { MenuItem } from './app.interfaces';
 })
 export class AppComponent {
   title = 'Products Frontend';
+  usersMenu = usersMenu;
+  productsMenu = productsMenu;
 
-  usersMenu: MenuItem[] = [
-    { text: 'List all Users', link: 'user/list' },
-    { text: 'Insert a User', link: 'user/insert' },
-    { text: 'Delete a User', link: 'not-implemented-yet' },
-    { text: 'Update a User', link: 'not-implemented-yet' },
-  ];
-  productsMenu: MenuItem[] = [
-    { text: 'List all Products', link: 'not-implemented-yet' },
-    { text: 'Insert a Product', link: 'not-implemented-yet' },
-    { text: 'Delete a Product', link: 'not-implemented-yet' },
-    { text: 'Update a Product', link: 'not-implemented-yet' },
-  ];
 }
